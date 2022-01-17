@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>Weather App</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon_io/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="weather-header">
+            <form id="weatherForm">
+                <input type="text" class="search" id="input" maxlength="20" placeholder="Find your city..." required>
+                <button class="button" id="btnGetWeather"><i class="fas fa-search"></i>Search</button>
+            </form>
+               
+        </div>
+        <div class="warning-message">            
+            <p>Please, enter correct city name.</p>
+        </div>
+        <div class="loading-container">            
+            <p id="loading-spinner"></p>
+        </div>
+        <div class="weather-city-result">
+            <div class="search-city-result">
+                <p id="temp"></p>
+                <br>
+                <p id="humidity"></p>
+                <br>
+                <p id="description"></p>
+            </div>
+            <div class="additional-info-block">
+                <p id="time"></p>
+                <br>
+                <p id="city"></p>
+                <br>
+                <p id="country"></p>
+                <img id="search-icon" src="" alt="">
+            </div>
+        </div>  
+    </script>
+    <script src="app.js" ></script>
+</body>
+</html>
