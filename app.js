@@ -37,7 +37,7 @@ window.addEventListener("load", () => {
         loadingSpinnerFunc(loading);
 
         fetch(
-          `http://api.openweathermap.org/data/2.5/weather?q=${inputValue}&units=metric&appid=${apiKey}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&units=metric&appid=${apiKey}`
         )
           .then((res) => res.json())
           .then((data) => {
